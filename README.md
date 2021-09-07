@@ -1,1 +1,3 @@
-# D2I_Python
+hi
+follow this rules 
+while using this package
