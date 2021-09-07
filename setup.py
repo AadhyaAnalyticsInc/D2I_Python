@@ -1,15 +1,15 @@
 from distutils.core import setup
 setup(
-  name = 'seaaddition',         # How you named your package folder (MyLib)
-  packages = ['seaaddition'],   # Chose the same as "name"
+  name = 'data2Insights',         # How you named your package folder (MyLib)
+  packages = ['data2Insights'],   # Chose the same as "name"
   version = '0.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-  description = 'testing ',   # Give a short description about your library
+  description ='Data2Insights of python packages can be used to integrate the data2insights services with your applications to enhance services with the data2insighs services. ',   # Give a short description about your library
   author = 'Deepika',                   # Type in your name
   author_email = 'mekalabhagyadeepika@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/BhagyaDeepika/sampleread.git',   # Provide either the link to your github or to your website
+  url = 'https://github.com/AadhyaAnalyticsInc/D2I_Python.git',   # Provide either the link to your github or to your website
   #download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
-  keywords = ['SOME', 'MEANINGFULL', 'KEYWORDS'],   # Keywords that define your package best
+  keywords = ['Data2Insights','services','Text','Vision','Batch'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           
           'requests',
@@ -25,5 +25,7 @@ setup(
     'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    
   ],
 )
