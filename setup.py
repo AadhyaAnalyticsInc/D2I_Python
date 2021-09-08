@@ -1,31 +1,34 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
+import codecs
+import os
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
+    long_description = "\n" + fh.read()
+
+VERSION = '1.0'
+DESCRIPTION = 'Data2Insights package'
+LONG_DESCRIPTION = 'Data2Insights of python packages can be used to integrate the data2insights services with your applications to enhance services with the data2insighs services. ''
+
+# Setting up
 setup(
-  name = 'data2Insights',         # How you named your package folder (MyLib)
-  packages = ['data2Insights'],   # Chose the same as "name"
-  version = '0.1',      # Start with a small number and increase it with every change you make
-  license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-  description ='Data2Insights of python packages can be used to integrate the data2insights services with your applications to enhance services with the data2insighs services. ',   # Give a short description about your library
-  author = 'Deepika',                   # Type in your name
-  author_email = 'mekalabhagyadeepika@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/AadhyaAnalyticsInc/D2I_Python.git',   # Provide either the link to your github or to your website
-  #download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
-  keywords = ['Data2Insights','services','Text','Vision','Batch'],   # Keywords that define your package best
-  install_requires=[            # I get to this in a second
-          
-          'requests',
-      ],
-  classifiers=[
-    'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-    'Intended Audience :: Developers',      # Define that your audience are developers
-    'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: MIT License',   # Again, pick a license
-    'Programming Language :: Python :: 3',      #Specify which pyhton versions that you want to support
-    'Programming Language :: Python :: 3.4',
-    'Programming Language :: Python :: 3.5',
-    'Programming Language :: Python :: 3.6',
-    'Programming Language :: Python :: 3.7',
-    'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
-    
-  ],
+    name="data2Insights",
+    version=VERSION,
+    author="Deepika",
+    author_email="<mekalabhagyadeepika@gmail.com>",
+    description=DESCRIPTION,
+    long_description_content_type="text/markdown",
+    long_description=long_description,
+    packages=find_packages(),
+    install_requires=['requests'],
+    keywords=['Data2Insights','services','Text','Vision','Batch'],
+    classifiers=[
+        "Development Status :: 1 - Planning",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
 )
