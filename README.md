@@ -37,7 +37,7 @@ Here are some examples of how to use Text Models:
 require 'autoload.php';
 
 // Use the Account Id,API key,Email Id from your account
-$ml = new Data2Insights\Client('<YOUR ACCOUNT ID HERE>','<YOUR API KEY HERE>','<YOUR EMAIL ID HERE>');
+$d2i = new Data2Insights\Client('<YOUR ACCOUNT ID HERE>','<YOUR API KEY HERE>','<YOUR EMAIL ID HERE>');
 
 // Call Sentiment Model
 $d2i->text->sentiment('<ENTER TEXT HERE>');
@@ -83,7 +83,7 @@ You can also use the Vision Models:
 require 'autoload.php';
 
 // Use the Account Id,API key,Email Id from your account
-$ml = new Data2Insights\Client('<YOUR ACCOUNT ID HERE>','<YOUR API KEY HERE>','<YOUR EMAIL ID HERE>');
+$d2i = new Data2Insights\Client('<YOUR ACCOUNT ID HERE>','<YOUR API KEY HERE>','<YOUR EMAIL ID HERE>');
 
 // Call Logo Model
 $d2i->vision->logo('<ENTER IMAGE URL HERE>');
@@ -156,7 +156,7 @@ You can also use Text-Batch Models
 require 'autoload.php';
 
 // Use the Account Id,API key,Email Id from your account
-$ml = new Data2Insights\Client('<YOUR ACCOUNT ID HERE>','<YOUR API KEY HERE>','<YOUR EMAIL ID HERE>');
+$d2i = new Data2Insights\Client('<YOUR ACCOUNT ID HERE>','<YOUR API KEY HERE>','<YOUR EMAIL ID HERE>');
 
 // Call sentiment Model
 $d2i->batch->sentiment('<SELECT COLUMN FROM FILE>','<ENTER FULL PATH OF FILE>');
